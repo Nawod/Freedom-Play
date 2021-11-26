@@ -3,6 +3,8 @@
 
 AI based hand gesture tracking program for control media player functions. ( Play/Pause, Volume control, Brightness control).
 
+![](./readmeImages/sound1.png)
+
 ## How to run the program?
 
 - Clone or download the repository 
