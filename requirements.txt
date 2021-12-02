@@ -4,3 +4,6 @@ mediapipe
 numpy
 pywin32
 pycaw
+tk
+screen_brightness_control
+PIL

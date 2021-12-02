@@ -14,10 +14,7 @@ from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 import screen_brightness_control as sbc
 
 #libraires for control media player
-import pyautogui
 import win32api
-
-import vlc
 
 
 wCam, hCam = 640, 480 #define the camera width and height
@@ -48,6 +45,12 @@ volRange = volume.GetVolumeRange()
 
 volPer = int(volume.GetMasterVolumeLevelScalar()*100)
 briPer = sbc.get_brightness()
+
+#Instruction
+print("\n****************************************************")
+print("      Freedom-Play hand tracking service started")
+print("\n****************************************************")
+print("\n\nIf you want to stop this service, 'Close this window' ")
 
 while True:
     success, img = cap.read()
@@ -224,5 +227,5 @@ while True:
     cv2.putText(Fimg, f'FPS: {int(fps)}', (10,40), cv2.FONT_HERSHEY_PLAIN , 2, (255,0,255), 2)
 
     #visualized the output
-    # cv2.imshow("Img", Fimg)
+    cv2.imshow("Img", Fimg)
     cv2.waitKey(1)
